@@ -9,7 +9,7 @@ function Home() {
         <p className="meta">21 years old</p>
         <p className="meta">Bachelor of Science in Information Technology</p>
         <p className="meta">National University Philippines</p>
-        <p className="meta">Metro Manila, Philippines</p>
+        <p className="meta">Makati City, Philippines</p>
 
         <div className="button-group">
           <a href="#about" className="btn">More About Me</a>
