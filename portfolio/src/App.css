@@ -1,0 +1,232 @@
+/* ---------- Layout ---------- */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 60px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.section h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #111111;
+  display: inline-block;
+}
+
+.section p {
+  margin-bottom: 14px;
+  max-width: 700px;
+}
+
+.meta {
+  color: #555555;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 2px solid #111111;
+  position: sticky;
+  top: 0;
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+  color: #444444;
+}
+
+.nav-links a:hover {
+  color: #111111;
+  text-decoration: underline;
+}
+
+.menu-btn {
+  display: none;
+  background: #ffffff;
+  border: 1px solid #111111;
+  color: #111111;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: inherit;
+}
+
+/* ---------- Home ---------- */
+.home {
+  padding: 80px 0;
+}
+
+.home h1 {
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.tagline {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* ---------- Buttons ---------- */
+.button-group {
+  margin-top: 28px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #111111;
+  color: #ffffff;
+  padding: 10px 22px;
+  text-decoration: none;
+  border: 1px solid #111111;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+.btn-outline {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+.btn-outline:hover {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+/* ---------- Skills ---------- */
+.tag-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  border: 1px solid #111111;
+  padding: 6px 14px;
+  font-size: 14px;
+  background-color: #ffffff;
+}
+
+.tag:hover {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+/* ---------- Cards ---------- */
+.card {
+  border: 1px solid #111111;
+  padding: 22px;
+  background-color: #ffffff;
+  max-width: 700px;
+}
+
+.card h3 {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+/* ---------- Contact ---------- */
+.contact-list {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.contact-list li {
+  display: flex;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 15px;
+  max-width: 500px;
+}
+
+.contact-label {
+  min-width: 90px;
+  font-weight: bold;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  background-color: #111111;
+  color: #ffffff;
+  padding: 24px 0;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 12px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin-left: 0;
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .home {
+    padding: 60px 0;
+  }
+
+  .home h1 {
+    font-size: 28px;
+  }
+
+  .btn {
+    display: block;
+    text-align: center;
+    margin: 0 0 10px 0;
+  }
+
+  .contact-list li {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
